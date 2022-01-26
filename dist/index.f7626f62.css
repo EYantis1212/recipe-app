@@ -572,7 +572,6 @@ body {
   fill: #f38e82;
 }
 .recipe__ingredients {
-  border: 1px solid blue;
   padding: 5rem 8rem;
   font-size: 1.6rem;
   line-height: 1.4;
@@ -603,7 +602,6 @@ body {
   flex: 0 0 auto;
 }
 .recipe__directions {
-  border: 1px solid green;
   padding: 5rem 10rem;
   padding-bottom: 5rem;
   display: flex;

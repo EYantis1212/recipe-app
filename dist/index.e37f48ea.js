@@ -532,13 +532,14 @@ const timeout = function(s) {
         }, s * 1000);
     });
 };
+//
 // https://forkify-api.herokuapp.com/v2
 ///////////////////////////////////////
 const renderSpinner = function(parentEl) {
     const markup = `
-    <svg>
-      <use href="${_iconsSvgDefault.default}#icon-loader"></use>
-    </svg>`;
+	<svg>
+	  <use href="${_iconsSvgDefault.default}#icon-loader"></use>
+	</svg>`;
     parentEl.innerHTML = '';
     parentEl.insertAdjacentHTML('afterbegin', markup);
 };
@@ -562,88 +563,91 @@ const showRecipe = async function() {
         };
         // 2) rendering recipe
         const markup = `
-        <figure class="recipe__fig">
+		<figure class="recipe__fig">
           <img src="${recipe.image}" alt="${recipe.title}" class="recipe__img" />
           <h1 class="recipe__title">
             <span>${recipe.title}</span>
           </h1>
         </figure>
 
-            <div class="recipe__details">
-              <div class="recipe__info">
-                <svg class="recipe__info-icon">
-                  <use href="${_iconsSvgDefault.default}#icon-clock"></use>
-                </svg>
-                <span class="recipe__info-data recipe__info-data--minutes">${recipe.cookingTime}</span>
-                <span class="recipe__info-text">minutes</span>
-              </div>
-              <div class="recipe__info">
-                <svg class="recipe__info-icon">
-                  <use href="${_iconsSvgDefault.default}#icon-users"></use>
-                </svg>
-                <span class="recipe__info-data recipe__info-data--people">${recipe.servings}</span>
-                <span class="recipe__info-text">servings</span>
+        <div class="recipe__details">
+          <div class="recipe__info">
+            <svg class="recipe__info-icon">
+              <use href="${_iconsSvgDefault.default}#icon-clock"></use>
+            </svg>
+            <span class="recipe__info-data recipe__info-data--minutes">${recipe.cookingTime}</span>
+            <span class="recipe__info-text">minutes</span>
+          </div>
+          <div class="recipe__info">
+            <svg class="recipe__info-icon">
+              <use href="${_iconsSvgDefault.default}#icon-users"></use>
+            </svg>
+            <span class="recipe__info-data recipe__info-data--people">${recipe.servings}</span>
+            <span class="recipe__info-text">servings</span>
 
-                <div class="recipe__info-buttons">
-                  <button class="btn--tiny btn--increase-servings">
-                    <svg>
-                      <use href="${_iconsSvgDefault.default}#icon-minus-circle"></use>
-                    </svg>
-                  </button>
-                  <button class="btn--tiny btn--increase-servings">
-                    <svg>
-                      <use href="${_iconsSvgDefault.default}#icon-plus-circle"></use>
-                    </svg>
-                  </button>
-                </div>
-              </div>
-
-              <div class="recipe__user-generated">
+            <div class="recipe__info-buttons">
+              <button class="btn--tiny btn--increase-servings">
                 <svg>
-                  <use href="${_iconsSvgDefault.default}#icon-user"></use>
+                  <use href="${_iconsSvgDefault.default}#icon-minus-circle"></use>
                 </svg>
-              </div>
-              <button class="btn--round">
-                <svg class="">
-                  <use href="${_iconsSvgDefault.default}#icon-bookmark-fill"></use>
+              </button>
+              <button class="btn--tiny btn--increase-servings">
+                <svg>
+                  <use href="${_iconsSvgDefault.default}#icon-plus-circle"></use>
                 </svg>
               </button>
             </div>
+          </div>
 
-            <div class="recipe__ingredients">
-              <h2 class="heading--2">Recipe ingredients</h2>
-              <ul class="recipe__ingredient-list">
-          ${recipe.ingredients.map((ing)=>{
+          <div class="recipe__user-generated">
+            <svg>
+              <use href="${_iconsSvgDefault.default}#icon-user"></use>
+            </svg>
+          </div>
+          <button class="btn--round">
+            <svg class="">
+              <use href="${_iconsSvgDefault.default}#icon-bookmark-fill"></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="recipe__ingredients">
+          <h2 class="heading--2">Recipe ingredients</h2>
+          <ul class="recipe__ingredient-list">
+						${recipe.ingredients.map((ing)=>{
             return `
-            <li class="recipe__ingredient">
-                <svg class="recipe__icon">
-                <use href="${_iconsSvgDefault.default}#icon-check"></use>
-              < /svg>
-              <div class="recipe__quantity">${ing.quantity}</div>
-              <div class="recipe__description">
-               <span class="recipe__unit">${ing.unit}</span>
-    ${ing.description}
-            </div>
-          </li>`;
-        }).join(' ')}
-  <div class="recipe__directions">
-      <h2 class="heading--2">How to cook it</h2>
-      <p class="recipe__directions-text">
-      This recipe was carefully designed and tested by
-      <span class="recipe__publisher">${recipe.publisher}</span>. Please check out
-      directions at their website.
-    </p>
-    <a
-      class="btn--small recipe__btn"
-      href="${recipe.sourceUrl}"
-      target="_blank"
-    >
-      <span>Directions</span>
-      <svg class="search__icon">
-        <use href="${_iconsSvgDefault.default}#icon-arrow-right"></use>
-      </svg>
-    </a>
-  </div>`;
+								<li class="recipe__ingredient">
+									<svg class="recipe__icon">
+										<use href="${_iconsSvgDefault.default}#icon-check"></use>
+									</svg>
+									<div class="recipe__quantity">${ing.quantity}</div>
+									<div class="recipe__description">
+										<span class="recipe__unit">${ing.unit}</span>
+									${ing.description}
+								</div>
+							</li>
+						`;
+        }).join('')}
+        </div>
+
+        <div class="recipe__directions">
+          <h2 class="heading--2">How to cook it</h2>
+          <p class="recipe__directions-text">
+            This recipe was carefully designed and tested by
+            <span class="recipe__publisher">${recipe.publisher}</span>. Please check out
+            directions at their website.
+          </p>
+          <a
+            class="btn--small recipe__btn"
+            href="${recipe.sourceUrl}"
+            target="_blank"
+          >
+            <span>Directions</span>
+            <svg class="search__icon">
+              <use href="${_iconsSvgDefault.default}#icon-arrow-right"></use>
+            </svg>
+          </a>
+        </div>`;
         recipeContainer.innerHTML = '';
         recipeContainer.insertAdjacentHTML('afterbegin', markup);
         console.log(recipe);
@@ -653,75 +657,7 @@ const showRecipe = async function() {
 };
 showRecipe();
 
-},{"url:../img/icons.svg":"loVOp","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","core-js/modules/web.immediate.js":"49tUX","regenerator-runtime/runtime":"dXNgZ"}],"loVOp":[function(require,module,exports) {
-module.exports = require('./helpers/bundle-url').getBundleURL('hWUTQ') + "icons.dfd7a6db.svg" + "?" + Date.now();
-
-},{"./helpers/bundle-url":"lgJ39"}],"lgJ39":[function(require,module,exports) {
-"use strict";
-var bundleURL = {
-};
-function getBundleURLCached(id) {
-    var value = bundleURL[id];
-    if (!value) {
-        value = getBundleURL();
-        bundleURL[id] = value;
-    }
-    return value;
-}
-function getBundleURL() {
-    try {
-        throw new Error();
-    } catch (err) {
-        var matches = ('' + err.stack).match(/(https?|file|ftp):\/\/[^)\n]+/g);
-        if (matches) // The first two stack frames will be this function and getBundleURLCached.
-        // Use the 3rd one, which will be a runtime in the original bundle.
-        return getBaseURL(matches[2]);
-    }
-    return '/';
-}
-function getBaseURL(url) {
-    return ('' + url).replace(/^((?:https?|file|ftp):\/\/.+)\/[^/]+$/, '$1') + '/';
-} // TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
-function getOrigin(url) {
-    var matches = ('' + url).match(/(https?|file|ftp):\/\/[^/]+/);
-    if (!matches) throw new Error('Origin not found');
-    return matches[0];
-}
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-exports.getOrigin = getOrigin;
-
-},{}],"gkKU3":[function(require,module,exports) {
-exports.interopDefault = function(a) {
-    return a && a.__esModule ? a : {
-        default: a
-    };
-};
-exports.defineInteropFlag = function(a) {
-    Object.defineProperty(a, '__esModule', {
-        value: true
-    });
-};
-exports.exportAll = function(source, dest) {
-    Object.keys(source).forEach(function(key) {
-        if (key === 'default' || key === '__esModule' || dest.hasOwnProperty(key)) return;
-        Object.defineProperty(dest, key, {
-            enumerable: true,
-            get: function() {
-                return source[key];
-            }
-        });
-    });
-    return dest;
-};
-exports.export = function(dest, destName, get) {
-    Object.defineProperty(dest, destName, {
-        enumerable: true,
-        get: get
-    });
-};
-
-},{}],"49tUX":[function(require,module,exports) {
+},{"core-js/modules/web.immediate.js":"49tUX","url:../img/icons.svg":"loVOp","regenerator-runtime/runtime":"dXNgZ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"49tUX":[function(require,module,exports) {
 var $ = require('../internals/export');
 var global = require('../internals/global');
 var task = require('../internals/task');
@@ -1771,7 +1707,45 @@ var classof = require('../internals/classof-raw');
 var global = require('../internals/global');
 module.exports = classof(global.process) == 'process';
 
-},{"../internals/classof-raw":"bdfmm","../internals/global":"i8HOC"}],"dXNgZ":[function(require,module,exports) {
+},{"../internals/classof-raw":"bdfmm","../internals/global":"i8HOC"}],"loVOp":[function(require,module,exports) {
+module.exports = require('./helpers/bundle-url').getBundleURL('hWUTQ') + "icons.dfd7a6db.svg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"lgJ39":[function(require,module,exports) {
+"use strict";
+var bundleURL = {
+};
+function getBundleURLCached(id) {
+    var value = bundleURL[id];
+    if (!value) {
+        value = getBundleURL();
+        bundleURL[id] = value;
+    }
+    return value;
+}
+function getBundleURL() {
+    try {
+        throw new Error();
+    } catch (err) {
+        var matches = ('' + err.stack).match(/(https?|file|ftp):\/\/[^)\n]+/g);
+        if (matches) // The first two stack frames will be this function and getBundleURLCached.
+        // Use the 3rd one, which will be a runtime in the original bundle.
+        return getBaseURL(matches[2]);
+    }
+    return '/';
+}
+function getBaseURL(url) {
+    return ('' + url).replace(/^((?:https?|file|ftp):\/\/.+)\/[^/]+$/, '$1') + '/';
+} // TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
+function getOrigin(url) {
+    var matches = ('' + url).match(/(https?|file|ftp):\/\/[^/]+/);
+    if (!matches) throw new Error('Origin not found');
+    return matches[0];
+}
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+exports.getOrigin = getOrigin;
+
+},{}],"dXNgZ":[function(require,module,exports) {
 /**
  * Copyright (c) 2014-present, Facebook, Inc.
  *
@@ -2350,6 +2324,36 @@ try {
     if (typeof globalThis === "object") globalThis.regeneratorRuntime = runtime;
     else Function("r", "regeneratorRuntime = r")(runtime);
 }
+
+},{}],"gkKU3":[function(require,module,exports) {
+exports.interopDefault = function(a) {
+    return a && a.__esModule ? a : {
+        default: a
+    };
+};
+exports.defineInteropFlag = function(a) {
+    Object.defineProperty(a, '__esModule', {
+        value: true
+    });
+};
+exports.exportAll = function(source, dest) {
+    Object.keys(source).forEach(function(key) {
+        if (key === 'default' || key === '__esModule' || dest.hasOwnProperty(key)) return;
+        Object.defineProperty(dest, key, {
+            enumerable: true,
+            get: function() {
+                return source[key];
+            }
+        });
+    });
+    return dest;
+};
+exports.export = function(dest, destName, get) {
+    Object.defineProperty(dest, destName, {
+        enumerable: true,
+        get: get
+    });
+};
 
 },{}]},["ddCAb","aenu9"], "aenu9", "parcelRequire041d")
 

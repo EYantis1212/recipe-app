@@ -1,14 +1,14 @@
-12496
-49/home/yantis/src/projects/recipe-app/package.json1643087861318527456 0
+12499
+49/home/yantis/src/projects/recipe-app/package.json1643093714242249140 0
 65/home/yantis/src/projects/recipe-app/forkify-flowchart-part-3.png1636639937000000000 0
-47/home/yantis/src/projects/recipe-app/index.html1643087801842549954 0
+47/home/yantis/src/projects/recipe-app/index.html1643092623134191117 0
 48/home/yantis/src/projects/recipe-app/.prettierrc1636639937000000000 0
-54/home/yantis/src/projects/recipe-app/package-lock.json1643087133194424908 0
-60/home/yantis/src/projects/recipe-app/dist/index.f7626f62.css1643087133902425187 0
-52/home/yantis/src/projects/recipe-app/dist/index.html1643087133906425189 0
-60/home/yantis/src/projects/recipe-app/dist/icons.21bad73c.svg1643087133914425192 0
-59/home/yantis/src/projects/recipe-app/dist/logo.726d37a8.png1643087133898425186 0
-41/home/yantis/src/projects/recipe-app/dist1643087814018544937 1
+54/home/yantis/src/projects/recipe-app/package-lock.json1643093714242249140 0
+60/home/yantis/src/projects/recipe-app/dist/index.f7626f62.css1643094060814235984 0
+52/home/yantis/src/projects/recipe-app/dist/index.html1643093906090243880 0
+60/home/yantis/src/projects/recipe-app/dist/icons.21bad73c.svg1643093906090243880 0
+59/home/yantis/src/projects/recipe-app/dist/logo.726d37a8.png1643093906106243878 0
+41/home/yantis/src/projects/recipe-app/dist1643094060814235984 1
 70/home/yantis/src/projects/recipe-app/node_modules/core-js/package.json1643087058214395769 0
 89/home/yantis/src/projects/recipe-app/node_modules/core-js/internals/number-parse-float.js1643087058162395749 0
 81/home/yantis/src/projects/recipe-app/node_modules/core-js/internals/array-fill.js1643087057890395645 0
@@ -1277,7 +1277,7 @@
 89/home/yantis/src/projects/recipe-app/node_modules/core-js/features/typed-array/entries.js1643087058018395694 0
 92/home/yantis/src/projects/recipe-app/node_modules/core-js/features/typed-array/int8-array.js1643087058138395740 0
 94/home/yantis/src/projects/recipe-app/node_modules/core-js/features/typed-array/reduce-right.js1643087058170395752 0
-63/home/yantis/src/projects/recipe-app/dist/index.62406edb.js.map1643087814018544937 0
+63/home/yantis/src/projects/recipe-app/dist/index.62406edb.js.map1643091999874211789 0
 101/home/yantis/src/projects/recipe-app/node_modules/core-js/features/typed-array/uint8-clamped-array.js1643087058206395766 0
 93/home/yantis/src/projects/recipe-app/node_modules/core-js/features/typed-array/int32-array.js1643087058138395740 0
 90/home/yantis/src/projects/recipe-app/node_modules/core-js/features/typed-array/includes.js1643087058126395736 0
@@ -1672,7 +1672,7 @@
 79/home/yantis/src/projects/recipe-app/node_modules/core-js/stable/instance/at.js1643087057938395663 0
 59/home/yantis/src/projects/recipe-app/node_modules/.bin/sass1643087133158424893 0
 97/home/yantis/src/projects/recipe-app/node_modules/readable-stream/lib/internal/streams/destroy.js1643087057754395593 0
-59/home/yantis/src/projects/recipe-app/dist/index.62406edb.js1643087814014544939 0
+59/home/yantis/src/projects/recipe-app/dist/index.62406edb.js1643091999870211789 0
 99/home/yantis/src/projects/recipe-app/node_modules/@parcel/transformer-babel/src/BabelTransformer.js1643087057698395572 0
 88/home/yantis/src/projects/recipe-app/node_modules/@parcel/transformer-babel/src/utils.js1643087057798395610 0
 74/home/yantis/src/projects/recipe-app/node_modules/icss-replace-symbols/lib1643087057570395523 1
@@ -3703,6 +3703,7 @@
 83/home/yantis/src/projects/recipe-app/node_modules/crypto-browserify/example/test.js1643087057706395575 0
 85/home/yantis/src/projects/recipe-app/node_modules/@babel/types/lib/definitions/jsx.js1643087057894395646 0
 71/home/yantis/src/projects/recipe-app/node_modules/chalk/source/index.js1643087057562395520 0
+63/home/yantis/src/projects/recipe-app/dist/index.e37f48ea.js.map1643093906114243878 0
 82/home/yantis/src/projects/recipe-app/node_modules/postcss-convert-values/README.md1643087057670395562 0
 66/home/yantis/src/projects/recipe-app/node_modules/core-js/es/array1643087058210395767 1
 64/home/yantis/src/projects/recipe-app/node_modules/iferr/iferr.js1643087057530395508 0
@@ -3763,7 +3764,7 @@
 113/home/yantis/src/projects/recipe-app/node_modules/@parcel/node-resolver-core/test/fixture/node_modules/@scope/pkg1643087057954395669 1
 86/home/yantis/src/projects/recipe-app/node_modules/highlight.js/lib/languages/fsharp.js1643087057946395667 0
 74/home/yantis/src/projects/recipe-app/node_modules/normalize-path/README.md1643087133142424887 0
-62/home/yantis/src/projects/recipe-app/dist/favicon.8b2f57bf.png1643087133906425189 0
+62/home/yantis/src/projects/recipe-app/dist/favicon.8b2f57bf.png1643093906094243879 0
 68/home/yantis/src/projects/recipe-app/node_modules/es-abstract/.nycrc1643087057610395539 0
 87/home/yantis/src/projects/recipe-app/node_modules/terser/node_modules/commander/LICENSE1643087057506395499 0
 90/home/yantis/src/projects/recipe-app/node_modules/jake/node_modules/chalk/types/index.d.ts1643087057690395569 0
@@ -4529,7 +4530,7 @@
 96/home/yantis/src/projects/recipe-app/node_modules/caniuse-lite/data/features/css-env-function.js1643087057938395663 0
 110/home/yantis/src/projects/recipe-app/node_modules/@parcel/core/test/fixtures/main-format-mismatch/package.json1643087057994395685 0
 60/home/yantis/src/projects/recipe-app/node_modules/nanoid/bin1643087057690395569 1
-68/home/yantis/src/projects/recipe-app/node_modules/.package-lock.json1643087133202424911 0
+68/home/yantis/src/projects/recipe-app/node_modules/.package-lock.json1643093714254249141 0
 78/home/yantis/src/projects/recipe-app/node_modules/which-boxed-primitive/.nycrc1643087057566395522 0
 71/home/yantis/src/projects/recipe-app/node_modules/colord/plugins/xyz.js1643087057734395585 0
 86/home/yantis/src/projects/recipe-app/node_modules/core-js/actual/instance/trim-left.js1643087058202395765 0
@@ -5160,7 +5161,7 @@
 83/home/yantis/src/projects/recipe-app/node_modules/es-abstract/2016/thisTimeValue.js1643087058094395723 0
 75/home/yantis/src/projects/recipe-app/node_modules/is-negative-zero/index.js1643087057610395539 0
 71/home/yantis/src/projects/recipe-app/node_modules/colord/plugins/lch.js1643087057682395566 0
-57/home/yantis/src/projects/recipe-app/src/js/controller.js1643087833354537413 0
+57/home/yantis/src/projects/recipe-app/src/js/controller.js1643093971138239943 0
 88/home/yantis/src/projects/recipe-app/node_modules/@parcel/diagnostic/lib/diagnostic.d.ts1643087057698395572 0
 76/home/yantis/src/projects/recipe-app/node_modules/htmlnano/docs/package.json1643087057906395652 0
 84/home/yantis/src/projects/recipe-app/node_modules/postcss-reduce-initial/LICENSE-MIT1643087057498395495 0
@@ -5207,7 +5208,7 @@
 97/home/yantis/src/projects/recipe-app/node_modules/@parcel/transformer-html/src/HTMLTransformer.js1643087057678395564 0
 77/home/yantis/src/projects/recipe-app/node_modules/@babel/core/lib/parser/util1643087057874395639 1
 98/home/yantis/src/projects/recipe-app/node_modules/highlight.js/styles/atelier-sulphurpool-dark.css1643087057822395619 0
-64/home/yantis/src/projects/recipe-app/dist/index.f7626f62.css.map1643087133906425189 0
+64/home/yantis/src/projects/recipe-app/dist/index.f7626f62.css.map1643094060814235984 0
 78/home/yantis/src/projects/recipe-app/node_modules/colord/plugins/harmonies.mjs1643087057794395608 0
 86/home/yantis/src/projects/recipe-app/node_modules/@parcel/package-manager/src/index.js1643087057610395539 0
 69/home/yantis/src/projects/recipe-app/node_modules/des.js/package.json1643087057770395600 0
@@ -5994,7 +5995,7 @@
 81/home/yantis/src/projects/recipe-app/node_modules/css-select/lib/compile.d.ts.map1643087057786395606 0
 76/home/yantis/src/projects/recipe-app/node_modules/domain-browser/.dependabot1643087057674395562 1
 87/home/yantis/src/projects/recipe-app/node_modules/@nodelib/fs.stat/out/adapters/fs.d.ts1643087057770395600 0
-58/home/yantis/src/projects/recipe-app/src/sass/_recipe.scss1636639937000000000 0
+58/home/yantis/src/projects/recipe-app/src/sass/_recipe.scss1643094063486235890 0
 95/home/yantis/src/projects/recipe-app/node_modules/@parcel/optimizer-htmlnano/lib/svgMappings.js1643087057646395552 0
 74/home/yantis/src/projects/recipe-app/node_modules/@babel/core/package.json1643087057898395648 0
 113/home/yantis/src/projects/recipe-app/node_modules/hash-base/node_modules/readable-stream/lib/_stream_transform.js1643087057678395564 0
@@ -6792,6 +6793,7 @@
 111/home/yantis/src/projects/recipe-app/node_modules/@parcel/transformer-react-refresh-wrap/src/helpers/helpers.js1643087057646395552 0
 80/home/yantis/src/projects/recipe-app/node_modules/postcss-normalize-charset/dist1643087057522395505 1
 71/home/yantis/src/projects/recipe-app/node_modules/@parcel/types/LICENSE1643087057506395499 0
+60/home/yantis/src/projects/recipe-app/dist/icons.dfd7a6db.svg1643093906118243877 0
 63/home/yantis/src/projects/recipe-app/node_modules/xtend/test.js1643087057630395546 0
 88/home/yantis/src/projects/recipe-app/node_modules/highlight.js/lib/languages/htmlbars.js1643087057958395671 0
 69/home/yantis/src/projects/recipe-app/node_modules/lmdb/src/cursor.cpp1643087057938395663 0
@@ -6824,7 +6826,7 @@
 69/home/yantis/src/projects/recipe-app/node_modules/parse-asn1/index.js1643087057594395532 0
 79/home/yantis/src/projects/recipe-app/node_modules/fastest-levenshtein/README.md1643087057654395555 0
 58/home/yantis/src/projects/recipe-app/node_modules/inflight1643087057542395512 1
-49/home/yantis/src/projects/recipe-app/node_modules1643087133158424893 1
+49/home/yantis/src/projects/recipe-app/node_modules1643093714206249138 1
 73/home/yantis/src/projects/recipe-app/node_modules/fast-url-parser/LICENSE1643087057566395522 0
 88/home/yantis/src/projects/recipe-app/node_modules/core-js/modules/es.typed-array.some.js1643087058058395709 0
 74/home/yantis/src/projects/recipe-app/node_modules/es-abstract/2020/Call.js1643087057926395659 0
@@ -12387,6 +12389,7 @@
 83/home/yantis/src/projects/recipe-app/node_modules/core-js/features/string/search.js1643087058178395755 0
 71/home/yantis/src/projects/recipe-app/node_modules/es-abstract/README.md1643087058122395734 0
 82/home/yantis/src/projects/recipe-app/node_modules/core-js/features/string/fixed.js1643087058098395725 0
+59/home/yantis/src/projects/recipe-app/dist/index.e37f48ea.js1643093906114243878 0
 77/home/yantis/src/projects/recipe-app/node_modules/@parcel/watcher/src/windows1643087057846395629 1
 83/home/yantis/src/projects/recipe-app/node_modules/core-js/features/string/strike.js1643087058190395759 0
 90/home/yantis/src/projects/recipe-app/node_modules/caniuse-lite/data/features/css-shapes.js1643087057966395675 0
